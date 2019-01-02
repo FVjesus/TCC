@@ -1,0 +1,24 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.7 }
+
+\bibitem[Braga, Carvalho e Ludermir 2000]{braga2000redes}
+\abntrefinfo{Braga, Carvalho e Ludermir}{BRAGA; CARVALHO; LUDERMIR}{2000}
+{BRAGA, A. d.~P.; CARVALHO, A.; LUDERMIR, T.~B. \emph{Redes neurais
+  artificiais: teoria e aplica{\c{c}}{\~o}es}. [S.l.]: Livros T{\'e}cnicos e
+  Cient{\'\i}ficos Rio de Janeiro, 2000.}
+
+\bibitem[Kov{\'a}cs 2002]{kovacs2002redes}
+\abntrefinfo{Kov{\'a}cs}{KOV{\'A}CS}{2002}
+{KOV{\'A}CS, Z.~L. \emph{Redes neurais artificiais}. [S.l.]: Editora Livraria
+  da Fisica, 2002.}
+
+\bibitem[Mora 2016]{mora2016continuum}
+\abntrefinfo{Mora}{MORA}{2016}
+{MORA, F. \emph{Continuum: Como Funciona o C{\'e}rebro?} [S.l.]: Artmed
+  Editora, 2016.}
+
+\end{thebibliography}
