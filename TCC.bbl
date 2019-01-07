@@ -11,6 +11,15 @@
   artificiais: teoria e aplica{\c{c}}{\~o}es}. [S.l.]: Livros T{\'e}cnicos e
   Cient{\'\i}ficos Rio de Janeiro, 2000.}
 
+\bibitem[Fernandes 2005]{da2005inteligencia}
+\abntrefinfo{Fernandes}{FERNANDES}{2005}
+{FERNANDES, A.~M. da R. \emph{Intelig{\^e}ncia Artificial: no{\c{c}}{\~o}es
+  gerais}. [S.l.]: Visual Books, 2005.}
+
+\bibitem[Hodges 1999]{hodges1999turing}
+\abntrefinfo{Hodges}{HODGES}{1999}
+{HODGES, A. \emph{Turing um fil{\'o}sofo da natureza}. [S.l.]: Unesp, 1999.}
+
 \bibitem[Kov{\'a}cs 2002]{kovacs2002redes}
 \abntrefinfo{Kov{\'a}cs}{KOV{\'A}CS}{2002}
 {KOV{\'A}CS, Z.~L. \emph{Redes neurais artificiais}. [S.l.]: Editora Livraria
@@ -20,5 +29,15 @@
 \abntrefinfo{Mora}{MORA}{2016}
 {MORA, F. \emph{Continuum: Como Funciona o C{\'e}rebro?} [S.l.]: Artmed
   Editora, 2016.}
+
+\bibitem[RUSSELL e NORVIG 2013]{russell2013inteligencia}
+\abntrefinfo{RUSSELL e NORVIG}{RUSSELL; NORVIG}{2013}
+{RUSSELL, S.; NORVIG, P. \emph{Intelig{\^e}ncia Artificial. Tradu{\c{c}}{\~a}o
+  da Terceira Edi{\c{c}}{\~a}o}. [S.l.]: Editora Elsevier, 2013.}
+
+\bibitem[Smolensky 1988]{smolensky1988connectionism}
+\abntrefinfo{Smolensky}{SMOLENSKY}{1988}
+{SMOLENSKY, P. \emph{Connectionism, constituency, and the language of thought}.
+  [S.l.]: University of Colorado at Boulder, 1988.}
 
 \end{thebibliography}
