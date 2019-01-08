@@ -278,6 +278,7 @@
 % ---
 \begin{siglas}
   \item[IA] Sigla para Inteligência Artificial
+  \item[KDD] \emph{Knowledge Discovery in Database}, em portugês Descoberta de Conhecimento em Bases de Dados
   \item[SOM] \emph{Self-Organizing Map}, em portugês Mapas auto organizáveis
   \item[RNAs] Sigla para Redes Neurais Artificiais
   
@@ -346,8 +347,32 @@ Existe um padrão para comentários que apresentam cunho misógino?
 Neste capítulo as referências conceituais e  conceitos envolvidos neste trabalho serão descritos. Partindo da definição de misoginia, passando pelas técnicas envolvidas, e arrematando com as concepções de analise dos dados.
 
 \section{Misoginia}
-\subsection{Cassificação}
+\subsection{Classificação}
+\section{Mineração de Dados}
+Conforme \citeonline{amorim2006conceitos} e  \citeonline{santos2008computaccao} a definição de mineração de dados (\emph{Data Mining}) pode ser descrita como o conjunto de técnicas que permite a extração de conhecimentos, padrões e relações de grandes massas de dados que não seriam descobertas com facilidade a olho nu pelo homem.
+
+A descoberta de padrões constitui-se de um processo que se inicia pela escolha dos dados que documentam de alguma maneira a pergunta que o especialista deseja responder. Os dados são integrados e pré-processados para que sejam entregues estruturados, higienizados, selecionados e padronizados à tarefa de mineração de dados. Na tarefa de mineração aplica-se alguma técnica inteligente capaz de encontrar soluções que auxiliam o especialista na descoberta de uma resposta. O resultado desta tarefa deve ser pós-processado para que se apresentem análises qualitativas e/ou quantitativa dos elementos encontrados e, quando possível, apresentados de maneira que possa ser interpretado de maneira a facilitar a tomada de decisão. \cite[p.569 - p.570]{inproceedings}
+
+Todo este processo, o qual pode ser chamado de Descoberta de Conhecimento em Base de Dados ou KDD \apudonline{fayyad1996kdd}{inproceedings}, está descrito na \autoref{fig_processo_descoberta}.
+
+\begin{figure}[htb]
+	\caption{\label{fig_processo_descoberta}Processo de Descoberta de Conhecimento em Base de Dados}
+	\begin{center}
+	    \includegraphics[scale=0.4]{imagens/Processo_de_descoberta_de_conhecimento_em_base_de_dados.pdf}
+	\end{center}
+	\legend{Fonte: \citeonline[p.570]{inproceedings}}
+\end{figure}
+
+Uma das definições mais utilizadas para o termo KDD é de Fayyad, que o define como "um processo não trivial de identificação de novos padrões válidos, úteis e compreensíveis".\cite[p.3]{camilo2009mineraccao}
+
+Ainda segundo \citeonline{camilo2009mineraccao}, até agora não é consesnso a definição dos termos \emph{Data Mining} e \emph{KDD}. No entanto, todos concordam que o processo de mineração deve ser interativo, iterativo e particionado em fases, comforme visto na \autoref{fig_processo_descoberta}. 
+
+\subsection{Tipos de estrutura de dados}
+Segundo \citeonline{sargiani2018identificaccao} a estrutura com a qual os dados são apresentados é importante, ela induz de forma direta nas ferramentas que serão utilizadas e nas técnicas de tratamento. Na análise de dados  não estruturados ferramentas que permitem extração de conhecimento a partir de dados sem estrutura são utilizadas. Para dados semi-estruturados as técnicas são definidas  com base no caso em específico. E para dados estruturados bancos relacionais são utilizados.
+
+
 \section{Mineração de Textos}
+
 \section{Inteligência Artificial}
 Segundo \citeonline{da2005inteligencia} a inteligência artificial é a parte da Ciência da Computação voltada para o desenvolvimento de sistemas de computadores inteligentes, isto é, sistemas que exibem características que estão associadas à inteligência no comportamento humano, como compreensão da linguagem, aprendizado, raciocínio, resolução de problemas, entre outros.
 
@@ -371,13 +396,14 @@ Ainda segundo \citeonline{russell2013inteligencia} os pesquisadores da IA possui
 	\item Uma terceira dificuldade surgiu devido a algumas limitações fundamentais nas estruturas básicas que estavam sendo utilizadas para gerar a comportamento inteligente.
 \end{enumerate}  
 
-Os chamados modelos \textbf{conexionistas} para sistemas inteligentes eram vistos por alguns como concorrentes diretos dos modelos simbólicos promovidos por Newell e Simon e da abordagem logicista de McCarthy e outros pesquisadores \citeonline{smolensky1988connectionism}.%duvidade nessa citação
+Os chamados modelos \textbf{conexionistas} para sistemas inteligentes eram vistos por alguns como concorrentes diretos dos modelos simbólicos promovidos por Newell e Simon e da abordagem logicista de McCarthy e outros pesquisadores \apudonline{smolensky1988connectionism}{russell2013inteligencia}.%duvidade nessa citação
+
 Pode parecer óbvio que, em certo nível, os seres humanos manipulam símbolos, mas os conexionistas mais fervorosos questionavam se a manipulação de símbolos tinha qualquer função explicativa real em modelos detalhados de cognição. Essa pergunta permanece sem resposta, mas a visão atual é de que as abordagens conexionista e simbólica são complementares, e não concorrentes. Como ocorreu com a separação da IA e da ciência cognitiva, a pesquisa moderna de rede neural se bifurcou em dois campos, um preocupado com a criação de algoritmos e arquiteturas de rede eficazes e a compreensão de suas propriedades matemáticas, o outro preocupado com a modelagem cuidadosa das propriedades empíricas de neurônios reais e conjuntos de neurônios.\cite{russell2013inteligencia}
 
-\subsection{Redes Neurais Artificiais}
+\section{Redes Neurais Artificiais}
 Segundo \citeonline{braga2000redes} RNAs são sistemas paralelos distribuidos compostos por unidades de processamento simples (nodos) que calculam determinadas funções matemáticas (normalmente não-lineares). Essa unidades são dispostas em uma ou mais camadas e interligadas por um grande número de conexões, geralmente unidirecionais. Estes modelos de conexões normalmente estão associados a pesos, os quais aramazenam o conhecimento representado no modelo e servem para ponderar a entrada recebida por cada neurônio da rede. O funcionamento destas redes é inspirado em uma estrutura física natural: o cérebro humano.
 
-Por volta do fim da década de 1950, na Universidade de Cornell, Rosenblatt deu continuidade às idéias de McCulloch. Criando uma genuína rede de múltiplos neurônios do tipo \emph{discriminadores lineares} esta rede foi descrita como rede de \emph{perceptron}. Um perceptron é uma rede com a seguinte topologia, os neurônios são dispostoos em váiras \emph{camadas}. Os que recebem das entradas diretamente formam o que é chamada de \emph{camada de entrada}. A camada que recebe a saída da camada de entrada como entrada constituem a segunda camada e assim consecutivamente até a ultima camada que é chamada de \emph{camada de saída}. Camadas que ficam entre as de entrada e saída são comumente referidas como \emph{camadas ocultas}.
+Comforme \citeonline{braga2000redes} e \citeonline{kovacs2002redes}, por volta do fim da década de 1950, na Universidade de Cornell, Rosenblatt deu continuidade às idéias de McCulloch. Criando uma genuína rede de múltiplos neurônios do tipo \emph{discriminadores lineares} esta rede foi descrita como rede de \emph{perceptron}. Um perceptron é uma rede com a seguinte topologia, os neurônios são dispostoos em váiras \emph{camadas}. Os que recebem das entradas diretamente formam o que é chamada de \emph{camada de entrada}. A camada que recebe a saída da camada de entrada como entrada constituem a segunda camada e assim consecutivamente até a ultima camada que é chamada de \emph{camada de saída}. Camadas que ficam entre as de entrada e saída são comumente referidas como \emph{camadas ocultas}.
 
 Com referência à \autoref{fig_rede_multicamada}.Uma rede neural multicamada de \emph{K} camadas, terá como entrada um vetor \textbf{x} de dimensão $J_0$ de componentes $x_{j_0}, j_0 = 1,2, ... J_0$. Estas conectam-se às entradas dos $J_1$ neurônios numa primeira camada. As saídas $u_lj_1,j_1 = 1,2, ... J_1$ destes, formando as componentes de um novo vetor \textbf{u$_1$} de dimensão $J_1$, conectam-se às entradas dos $J_2$ neurônios da camada seguinte e assim sucessivamente até a última camada que consistirá de $J_K$ neurônios fornecendo como saída da rede um vetor \textbf{y = u$_K$} de dimensão $J_K$. Genéricamente, $u_{kj_k}$ denota a saída do $j_k$ -ésima entrada da rede, e para $k=K$ a $j_k$ -ésima saída da rede.\cite[p. 39--40]{kovacs2002redes}
 
@@ -386,19 +412,19 @@ Com referência à \autoref{fig_rede_multicamada}.Uma rede neural multicamada de
 	\begin{center}
 	    \includegraphics[scale=0.7]{imagens/rede_neural_multicamada.pdf}
 	\end{center}
-	\legend{Fonte: \citeonline[p. 40]{kovacs2002redes}}
+	\legend{Fonte: \citeonline[p.40]{kovacs2002redes}}
 \end{figure}
 
 Ainda segundo \citeonline{kovacs2002redes} e \citeonline{braga2000redes} o problema que Rosenblatt propôs a resolver foi o de casos simples com implementação de funções booleanas \textbf{E} e \textbf{OU} de duas variáveis, que são problemas linearmente separáveis, isto é, problemas cuja solução pode ser obtida ao dividir o espaço de entrada em duas regiões através de uma reta. O perceptron, não consegue detectar conectividade, paridade e simetria, que são problemas não-linearmente separáveis. Estes são exemplos de \textit{hard learning problems} (problemas difíceis de aprender).
 
 A abordagem conexionista ficou adormecida durante os anos 70, porém alguns pesquisadores continuaram desenvolvendo trabalhos na área. Dentre eles podem ser citados Igor Aleksander (redes sem pesos) na Inglaterra, Kunihiko Fukushima (cognitron e neocognitron) no Japão, Steven Grossberg (sistemas auto-adaptativos) nos EUA, e Teuvo Kohonen (memórias associativas e auto-organizadas) na Finlândia.
-\subsubsection{Motivação para as RNAs: redes biológicas}
+\subsection{Motivação para as RNAs: redes biológicas}
 O cérebro humano é um imenso e complexo bosque de células e conexões intercelulares. Esse bosque emaranhado é composto de aproximadamente 100 bilhões de neurônios ($ 1 * 10^{11}$) de formas e tamanhos diferentes. Considera-se que apenas no córtex cerebral, que contém quase a metade desse número, isto é, cerca de 50 bilhões, existam mais de 500 tipos de neurônios morfologicamente diferentes, distribuídos em 52 áreas.\cite[p.18]{mora2016continuum} 
 
 A estrutura dos nodos, a topologia dessas conexões e o comportamento conjunto dos neurônios naturais constroem a base de estudo das RNAs. As RNAs tendem a reproduzir as funções das redes biológicas, buscando colocar em prática a sua dinâmica e seu comportamento básico. 
 
 Conforme \citeonline{braga2000redes}, como caracteristicas comuns, ambos os sistemas são baseados em unidades de computação paralela e distribuída que se comunicam por meio de conexões sinápticas, possuem detetores de características, redundância e modularização das conexões. Apesar de pouca similaridade entre os dois sistemas do ponto de vista biológico, estas características semelhantes permitem às RNAs reproduzirem com fidelidade várias funções inerentes dos seres humanos
-\subsection{Mapas Auto Organizáveis de Kohonen}
+\section{Mapas Auto Organizáveis de Kohonen}
 \chapter{Desenvolvimento}
 \chapter{Testes e Análise de Resultados}
 \chapter{Conclusão}

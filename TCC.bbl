@@ -5,11 +5,32 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.7 }
 
+\bibitem[Amorim 2006]{amorim2006conceitos}
+\abntrefinfo{Amorim}{AMORIM}{2006}
+{AMORIM, T. Conceitos, t{\'e}cnicas, ferramentas e aplica{\c{c}}{\~o}es de
+  minera{\c{c}}{\~a}o de dados para gerar conhecimento a partir de bases de
+  dados.
+\emph{Monografia (Bacharel em Ci{\^e}ncia da Computa{\c{c}}{\~a}o).
+  Universidade Federal de Pernambuco}, 2006.}
+
 \bibitem[Braga, Carvalho e Ludermir 2000]{braga2000redes}
 \abntrefinfo{Braga, Carvalho e Ludermir}{BRAGA; CARVALHO; LUDERMIR}{2000}
 {BRAGA, A. d.~P.; CARVALHO, A.; LUDERMIR, T.~B. \emph{Redes neurais
   artificiais: teoria e aplica{\c{c}}{\~o}es}. [S.l.]: Livros T{\'e}cnicos e
   Cient{\'\i}ficos Rio de Janeiro, 2000.}
+
+\bibitem[Camilo e Silva 2009]{camilo2009mineraccao}
+\abntrefinfo{Camilo e Silva}{CAMILO; SILVA}{2009}
+{CAMILO, C.~O.; SILVA, J. C.~d. Minera{\c{c}}{\~a}o de dados: Conceitos,
+  tarefas, m{\'e}todos e ferramentas.
+\emph{Universidade Federal de Goi{\'a}s (UFC)}, p. 1--29, 2009.}
+
+\bibitem[Fayyad, Piatetsky-Shapiro e Smyth 1996]{fayyad1996kdd}
+\abntrefinfo{Fayyad, Piatetsky-Shapiro e Smyth}{FAYYAD; PIATETSKY-SHAPIRO;
+  SMYTH}{1996}
+{FAYYAD, U.; PIATETSKY-SHAPIRO, G.; SMYTH, P. The kdd process for extracting
+  useful knowledge from volumes of data.
+\emph{Communications of the ACM}, ACM, v.~39, n.~11, p. 27--34, 1996.}
 
 \bibitem[Fernandes 2005]{da2005inteligencia}
 \abntrefinfo{Fernandes}{FERNANDES}{2005}
@@ -34,6 +55,26 @@
 \abntrefinfo{RUSSELL e NORVIG}{RUSSELL; NORVIG}{2013}
 {RUSSELL, S.; NORVIG, P. \emph{Intelig{\^e}ncia Artificial. Tradu{\c{c}}{\~a}o
   da Terceira Edi{\c{c}}{\~a}o}. [S.l.]: Editora Elsevier, 2013.}
+
+\bibitem[Santos 2008]{santos2008computaccao}
+\abntrefinfo{Santos}{SANTOS}{2008}
+{SANTOS, R. Computa{\c{c}}{\~a}o e matem{\'a}tica aplicada {\`a}s ci{\^e}ncias
+  e tecnologias espaciais, chapter introdu{\c{c}}{\~a}o {\`a}
+  minera{\c{c}}{\~a}o de dados com aplica{\c{c}}{\~o}es em ci{\^e}ncias
+  ambientais e espaciais.
+\emph{Instituto Nacional de Pesquisas Espaciais}, p. 15--38, 2008.}
+
+\bibitem[Sargiani et al. 2018]{sargiani2018identificaccao}
+\abntrefinfo{Sargiani et al.}{SARGIANI et al.}{2018}
+{SARGIANI, V. et al. Identifica{\c{c}}{\~a}o de padr{\~o}es em textos de
+  m{\'\i}dias sociais utilizando redes neurais e visualiza{\c{c}}{\~a}o de
+  dados.
+Universidade Presbiteriana Mackenzie, 2018.}
+
+\bibitem[Silva e Silva 2014]{inproceedings}
+\abntrefinfo{Silva e Silva}{SILVA; SILVA}{2014}
+{SILVA, L.; SILVA, L. Fundamentos de mineração de dados educacionais. In:  .
+  [S.l.: s.n.], 2014. p.~568.}
 
 \bibitem[Smolensky 1988]{smolensky1988connectionism}
 \abntrefinfo{Smolensky}{SMOLENSKY}{1988}
