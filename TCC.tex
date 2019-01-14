@@ -353,7 +353,11 @@ Conforme \citeonline{amorim2006conceitos} e  \citeonline{santos2008computaccao} 
 
 A descoberta de padrões constitui-se de um processo que se inicia pela escolha dos dados que documentam de alguma maneira a pergunta que o especialista deseja responder. Os dados são integrados e pré-processados para que sejam entregues estruturados, higienizados, selecionados e padronizados à tarefa de mineração de dados. Na tarefa de mineração aplica-se alguma técnica inteligente capaz de encontrar soluções que auxiliam o especialista na descoberta de uma resposta. O resultado desta tarefa deve ser pós-processado para que se apresentem análises qualitativas e/ou quantitativa dos elementos encontrados e, quando possível, apresentados de maneira que possa ser interpretado de maneira a facilitar a tomada de decisão. \cite[p.569 - p.570]{inproceedings}
 
-Todo este processo, o qual pode ser chamado de Descoberta de Conhecimento em Base de Dados ou KDD \apudonline{fayyad1996kdd}{inproceedings}, está descrito na \autoref{fig_processo_descoberta}.
+Todo este processo citado acima, pode ser chamado de Descoberta de Conhecimento em Base de Dados ou simplismente KDD, consoante \apudonline{fayyad1996kdd}{inproceedings}.
+
+Uma das definições mais utilizadas para o termo KDD é a de Fayyad, que o define como "um processo não trivial de identificação de novos padrões válidos, úteis e compreensíveis".\cite[p.3]{camilo2009mineraccao}
+
+Ainda segundo \citeonline{camilo2009mineraccao}, até agora não é consenso a definição dos termos \emph{Data Mining} e \emph{KDD}. No entanto, todos concordam que o processo de mineração deve ser interativo, iterativo e particionado em fases, comforme visto na \autoref{fig_processo_descoberta}. 
 
 \begin{figure}[htb]
 	\caption{\label{fig_processo_descoberta}Processo de Descoberta de Conhecimento em Base de Dados}
@@ -363,15 +367,30 @@ Todo este processo, o qual pode ser chamado de Descoberta de Conhecimento em Bas
 	\legend{Fonte: \citeonline[p.570]{inproceedings}}
 \end{figure}
 
-Uma das definições mais utilizadas para o termo KDD é de Fayyad, que o define como "um processo não trivial de identificação de novos padrões válidos, úteis e compreensíveis".\cite[p.3]{camilo2009mineraccao}
-
-Ainda segundo \citeonline{camilo2009mineraccao}, até agora não é consesnso a definição dos termos \emph{Data Mining} e \emph{KDD}. No entanto, todos concordam que o processo de mineração deve ser interativo, iterativo e particionado em fases, comforme visto na \autoref{fig_processo_descoberta}. 
-
 \subsection{Tipos de estrutura de dados}
 Segundo \citeonline{sargiani2018identificaccao} a estrutura com a qual os dados são apresentados é importante, ela induz de forma direta nas ferramentas que serão utilizadas e nas técnicas de tratamento. Na análise de dados  não estruturados ferramentas que permitem extração de conhecimento a partir de dados sem estrutura são utilizadas. Para dados semi-estruturados as técnicas são definidas  com base no caso em específico. E para dados estruturados bancos relacionais são utilizados.
 
+De acordo com \citeonline{morais2007mineraccao} e \citeonline{sargiani2018identificaccao}, o processo de descoberta de conhecimento em \textbf{dados estruturados} é feito através do uso de ferramentas baseadas em métodos estatísticos, métodos provenientes da área de recuperação de informações e  ontologias, estes dados possuem um formato definido através de algum critério. A informação pode ser representada em \emph{datasets}, tabelas, arquivos multimídia ou arquivos texto. 
+
+Os \textbf{dados semi-estruturados} não possuem um formato adequado para o uso de apenas uma ontologia, porém podem ser identificados, pois possuem algum grau de regularidade.\apud{barros2008hidden}{sargiani2018identificaccao}
+
+Conforme \citeonline{inbook} e \citeonline{sargiani2018identificaccao} os chamados \textbf{dados não estruturados} ocorrem quando a informação não possui nenhum formato reconhecível, comumente correlacionado a linguagem natural, o Twitter, e-mails e conteúdo em fóruns são alguns exemplos, as informações não estão dispostas em tabelas númericas organizadas em linhas e colunas e não possuem um formato adequado para o uso de uma ontologia. A mineração de textos é uma técnica usada pelos sistemas inteligentes que engloba o processamento de dados não estruturados do tipo texto, em outras palavras as \emph{strings} ou sequência de caracteres de um texto.
 
 \section{Mineração de Textos}
+A mineração de textos consiste em extrair regularidades , padrões ou tendências para determinados objetivos, essa obtenção de informação é feita em grandes volumes de textos em linguagem natural. É um campo novo e multidisciplinar que inclui conhecimento de áreas como Estatística, Informática, Linguistica e Ciência Cognitiva. \citeonline{aranha2006tecnologia}
+
+Conforme \citeonline{sargiani2018identificaccao} para a execução da análise é necessário estruturar esse tipo de dados não estruturados por meio de um modelo de representação, que transforma os termos de cada publicação em um valor de relevância. A análise de dados não estruturados é feita em três fases distintas.
+
+\begin{itemize}
+	\item A primeira fase do processo é a construção do vacábulário que se dá pelo processo de mineração de textos. Isto é, o texto com todos os comentários selecionados representa o \emph{corpus} inicial. Para a geração da representação (\emph{corpus} representado) é necessário seguir os seguintes passos, como descrito por \apudonline{goker2009information}{sargiani2018identificaccao} e \apudonline{da2017introduccao}{sargiani2018identificaccao}:
+	\begin{enumerate}
+		\item \emph{Tokenization}: A partir do caractere espaço, os comandos das instruções são separados em tokens. Os caracteres especiais como vírgulas (","), e pontuação em geral, são removidos, assim como números. Padronização de capitalização para minúsculas(ou maiúsculas) também é feita nesta fase;
+		\item \emph{Stopwords}: Palavras como artigos, advérbios, pronomes, preposições, que são comuns em diferentes contextos, são removidos do processo;
+		\item \emph{Stemming}: As palavras resultantes das etapas anteriores passam por uma normalização ortográfica para que sejam reduzidas ao radical. Este processo é importante, pois permite que palavras com o mesmo radical sejam consideradas como semelhantes.
+	\end{enumerate}
+	\item A segunda fase é a geração do \emph{corpus}. Este \emph{corpus} é uma matriz contendo todos os documentos analisados, todos os termos encontrados, e suas respectivas quantidades em cada documento;
+	\item A última fase é a geração da matriz de frequências, momento em que é feita a relação entre cada documento e os termos constantes. O formato ideal a ser escolhido depende principalmente da análise que será feita posteriormente, pois o formato dessa matriz afeta diretamente no processo de análise.
+\end{itemize}
 
 \section{Inteligência Artificial}
 Segundo \citeonline{da2005inteligencia} a inteligência artificial é a parte da Ciência da Computação voltada para o desenvolvimento de sistemas de computadores inteligentes, isto é, sistemas que exibem características que estão associadas à inteligência no comportamento humano, como compreensão da linguagem, aprendizado, raciocínio, resolução de problemas, entre outros.
@@ -418,6 +437,7 @@ Com referência à \autoref{fig_rede_multicamada}.Uma rede neural multicamada de
 Ainda segundo \citeonline{kovacs2002redes} e \citeonline{braga2000redes} o problema que Rosenblatt propôs a resolver foi o de casos simples com implementação de funções booleanas \textbf{E} e \textbf{OU} de duas variáveis, que são problemas linearmente separáveis, isto é, problemas cuja solução pode ser obtida ao dividir o espaço de entrada em duas regiões através de uma reta. O perceptron, não consegue detectar conectividade, paridade e simetria, que são problemas não-linearmente separáveis. Estes são exemplos de \textit{hard learning problems} (problemas difíceis de aprender).
 
 A abordagem conexionista ficou adormecida durante os anos 70, porém alguns pesquisadores continuaram desenvolvendo trabalhos na área. Dentre eles podem ser citados Igor Aleksander (redes sem pesos) na Inglaterra, Kunihiko Fukushima (cognitron e neocognitron) no Japão, Steven Grossberg (sistemas auto-adaptativos) nos EUA, e Teuvo Kohonen (memórias associativas e auto-organizadas) na Finlândia.
+
 \subsection{Motivação para as RNAs: redes biológicas}
 O cérebro humano é um imenso e complexo bosque de células e conexões intercelulares. Esse bosque emaranhado é composto de aproximadamente 100 bilhões de neurônios ($ 1 * 10^{11}$) de formas e tamanhos diferentes. Considera-se que apenas no córtex cerebral, que contém quase a metade desse número, isto é, cerca de 50 bilhões, existam mais de 500 tipos de neurônios morfologicamente diferentes, distribuídos em 52 áreas.\cite[p.18]{mora2016continuum} 
 
@@ -425,6 +445,7 @@ A estrutura dos nodos, a topologia dessas conexões e o comportamento conjunto d
 
 Conforme \citeonline{braga2000redes}, como caracteristicas comuns, ambos os sistemas são baseados em unidades de computação paralela e distribuída que se comunicam por meio de conexões sinápticas, possuem detetores de características, redundância e modularização das conexões. Apesar de pouca similaridade entre os dois sistemas do ponto de vista biológico, estas características semelhantes permitem às RNAs reproduzirem com fidelidade várias funções inerentes dos seres humanos
 \section{Mapas Auto Organizáveis de Kohonen}
+
 \chapter{Desenvolvimento}
 \chapter{Testes e Análise de Resultados}
 \chapter{Conclusão}

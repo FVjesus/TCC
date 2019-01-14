@@ -13,6 +13,19 @@
 \emph{Monografia (Bacharel em Ci{\^e}ncia da Computa{\c{c}}{\~a}o).
   Universidade Federal de Pernambuco}, 2006.}
 
+\bibitem[Aranha e Passos 2006]{aranha2006tecnologia}
+\abntrefinfo{Aranha e Passos}{ARANHA; PASSOS}{2006}
+{ARANHA, C.; PASSOS, E. A tecnologia de minera{\c{c}}{\~a}o de textos.
+\emph{Revista Eletr{\^o}nica de Sistemas de Informa{\c{c}}{\~a}o}, v.~5, n.~2,
+  2006.}
+
+\bibitem[Barros et al. 2008]{barros2008hidden}
+\abntrefinfo{Barros et al.}{BARROS et al.}{2008}
+{BARROS, F.~A. et al. Hidden markov models and text classifiers for information
+  extraction on semi-structured texts. In:  IEEE. \emph{Hybrid Intelligent
+  Systems, 2008. HIS'08. Eighth International Conference on}. [S.l.], 2008. p.
+  417--422.}
+
 \bibitem[Braga, Carvalho e Ludermir 2000]{braga2000redes}
 \abntrefinfo{Braga, Carvalho e Ludermir}{BRAGA; CARVALHO; LUDERMIR}{2000}
 {BRAGA, A. d.~P.; CARVALHO, A.; LUDERMIR, T.~B. \emph{Redes neurais
@@ -25,6 +38,12 @@
   tarefas, m{\'e}todos e ferramentas.
 \emph{Universidade Federal de Goi{\'a}s (UFC)}, p. 1--29, 2009.}
 
+\bibitem[Cecilio e Castro 2015]{inbook}
+\abntrefinfo{Cecilio e Castro}{CECILIO; CASTRO}{2015}
+{CECILIO, S.; CASTRO, R. Análise de dados não estruturados: Mineração de
+  textos.
+In:  \underline{\ \ \ \ \ \ \ \ }. [S.l.: s.n.], 2015. p. 79--98.}
+
 \bibitem[Fayyad, Piatetsky-Shapiro e Smyth 1996]{fayyad1996kdd}
 \abntrefinfo{Fayyad, Piatetsky-Shapiro e Smyth}{FAYYAD; PIATETSKY-SHAPIRO;
   SMYTH}{1996}
@@ -36,6 +55,11 @@
 \abntrefinfo{Fernandes}{FERNANDES}{2005}
 {FERNANDES, A.~M. da R. \emph{Intelig{\^e}ncia Artificial: no{\c{c}}{\~o}es
   gerais}. [S.l.]: Visual Books, 2005.}
+
+\bibitem[Goker e Davies 2009]{goker2009information}
+\abntrefinfo{Goker e Davies}{GOKER; DAVIES}{2009}
+{GOKER, A.; DAVIES, J. \emph{Information retrieval: searching in the 21st
+  century}. [S.l.]: John Wiley \& Sons, 2009.}
 
 \bibitem[Hodges 1999]{hodges1999turing}
 \abntrefinfo{Hodges}{HODGES}{1999}
@@ -50,6 +74,11 @@
 \abntrefinfo{Mora}{MORA}{2016}
 {MORA, F. \emph{Continuum: Como Funciona o C{\'e}rebro?} [S.l.]: Artmed
   Editora, 2016.}
+
+\bibitem[Morais e Ambr{\'o}sio 2007]{morais2007mineraccao}
+\abntrefinfo{Morais e Ambr{\'o}sio}{MORAIS; AMBR{\'O}SIO}{2007}
+{MORAIS, E. A.~M.; AMBR{\'O}SIO, A. P.~L. Minera{\c{c}}{\~a}o de textos.
+\emph{Relat{\'o}rio T{\'e}cnico--Instituto de Inform{\'a}tica (UFG)}, 2007.}
 
 \bibitem[RUSSELL e NORVIG 2013]{russell2013inteligencia}
 \abntrefinfo{RUSSELL e NORVIG}{RUSSELL; NORVIG}{2013}
@@ -75,6 +104,12 @@ Universidade Presbiteriana Mackenzie, 2018.}
 \abntrefinfo{Silva e Silva}{SILVA; SILVA}{2014}
 {SILVA, L.; SILVA, L. Fundamentos de mineração de dados educacionais. In:  .
   [S.l.: s.n.], 2014. p.~568.}
+
+\bibitem[Silva, Peres e Boscarioli 2017]{da2017introduccao}
+\abntrefinfo{Silva, Peres e Boscarioli}{SILVA; PERES; BOSCARIOLI}{2017}
+{SILVA, L.~A. da; PERES, S.~M.; BOSCARIOLI, C. \emph{Introdu{\c{c}}{\~a}o {\`a}
+  minera{\c{c}}{\~a}o de dados: com aplica{\c{c}}{\~o}es em R}. [S.l.]:
+  Elsevier Brasil, 2017.}
 
 \bibitem[Smolensky 1988]{smolensky1988connectionism}
 \abntrefinfo{Smolensky}{SMOLENSKY}{1988}
