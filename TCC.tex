@@ -277,10 +277,12 @@
 % inserir lista de abreviaturas e siglas
 % ---
 \begin{siglas}
+  \item[BMU] \emph{Best Match Unit}  	
   \item[IA] Sigla para Inteligência Artificial
   \item[KDD] \emph{Knowledge Discovery in Database}, em portugês Descoberta de Conhecimento em Bases de Dados
   \item[SOM] \emph{Self-Organizing Map}, em portugês Mapas auto organizáveis
   \item[RNAs] Sigla para Redes Neurais Artificiais
+  
   
 \end{siglas}
 % ---
@@ -462,7 +464,28 @@ A estrutura dos nodos, a topologia dessas conexões e o comportamento conjunto d
 
 Conforme \citeonline{braga2000redes}, como caracteristicas comuns, ambos os sistemas são baseados em unidades de computação paralela e distribuída que se comunicam por meio de conexões sinápticas, possuem detetores de características, redundância e modularização das conexões. Apesar de pouca similaridade entre os dois sistemas do ponto de vista biológico, estas características semelhantes permitem às RNAs reproduzirem com fidelidade várias funções inerentes dos seres humanos
 \section{Mapas Auto Organizáveis de Kohonen}
+\citeonline{kohonen2013essentials} define SOM como uma técnica de análise de dados não supervisionado, realizada por meio do treinamento de um \emph{grid} de neurônios. A anélise de sinais chamada \emph{"Vector Quantization"}, introduzido por \citeonline{forgy1965cluster} para forma vetorial, e por \citeonline{lloyd1982least} para dados escalares, foi a base para a criação desta técnica. 
 
+O SOM realiza uma projeção não linear do espaço de dados de entrada, em $\emph{R}^D$, para o espaço de dados do arranjo, em $\emph{R}^P$, executando uma redução dimensional quando \emph{P} < \emph{D}. Como o arranjo é normalmente unidimensional ou bidimensional, então \emph{P} = 1 ou \emph{P} = 2. Ao realizar esta projeção não linear, o algoritmo tenta preservar ao máximo a topologia do espaço original, ou seja, procura fazer com que neurônios de vizinhos no arranjo apresentem vetores de pesos que retratem as relações de vizinhança entre os dados. Para tanto, os neurônios competem para representar cada dado, e o neurônio vencedor tem seu vetor de pesos ajustados na direção do dado. Esta redução da dimensionalidade com preservação topologica permite ampliar a capacidade de análise de agrupamentos dos dados pertecentes a espaços de elevada dimensão.\cite[p.37]{zuchini2003aplicaccoes}
+
+\subsection{Definição Matemática do SOM}
+
+\citeonline{kohonen2007kohonen} faz a seguinte definição matématica para o SOM:
+
+Os primeiros itens de dados que são vetores euclidianos de n-dimensões devem ser considerados 
+$$x(t) = [\xi_1(t),\xi_2(t)\ldots, \xi_\emph{n}(t)]. $$
+Para uma determinada sequência, $t$ representa o índice de cada item. Onde o \emph{i}-ésimo modelo será $m_\emph{i}(t) = [\mu_{\emph{i}1}(t),\mu_{\emph{i}2}(t),\ldots,\mu_{in}(t)]$, desta vez $t$ representa o indice na sequência em que são gerados os modelos. Essa sequência é um processo de suavização no qual o novo valor $m_\emph{i}(t + 1)$ é computado iterativamente a contar do valor antigo $m_\emph{i}(t)$ e o novo item $x(t)$, determinado por $$m_\emph{i}(t + 1) = m_\emph{i}(t) + \alpha(t)h_{\emph{ci}(t)}[x(t) - m_\emph{i}(t)].$$
+Onde $\alpha(t)$ é um fator escalar que define o tamanho da correção, esse valor decresce a cada época, isto é, a cada novo indice $t$. O indice $i$ se refere ao modelo em processamento, enquanto o indice $c$ refere-se ao modelo com a menor distanfica de $x(t)$ no espaço euclidiano. O fator $h_{ci}(t)$ é a função de vizinhança. É igual a 1 quando $i = c$ e o valor decresce a medida que a distância entre os modelos $m_i$ e $m_\emph{c}$ aumenta no grid. Além diso, a cada época a largura espacial do kernel no grid diminui. As funções que determinam a convergência, devem ser escolhidas com muita cautela.
+
+Ainda segundo \citeonline{kohonen2007kohonen} embora o algoritmo iterativo tenha sido usado com êxito em  incontáveis aplicações, foi expôsto que o esquema \emph{Batch Map} produz resultados essencialmente semelhantes, mas com maior velocidade. A idéia básica é que para cada no $j$ no grid, a média $\bar{x}(t)$ de todos os itens de entrada $x(t)$ é formada e tem $m_j$ como modelo mais próximo. Após isso, os novos modelos são computados como $$m_i = \sum_jn_jh_{ji}\bar{x}_j/\sum_j n_j h_{ji}$$ onde $n_j$ é o número de itens de entrada mapeados para o nó $j$, e o índice $j$ é executado  para toda vizinhançado do nó $i$. Esse esquema é iterado alguma vezes para o $m_i$ atualizado, sempre utilizando o mesmo lote de itens de dados de entrada para determinar o novo $\bar{x}_j$.
+%devo colocar o algortimo convencional?
+\subsection{Aprendizagem}
+
+O algoritmo básico de trinamento do SOM consiste em três fases. Na primeira fase, competitiva, os neurônios da camada de saída competem entre si, segundo algum critério, geralmente a distância Euclideana, para encontrar um único vencedor, também chamado de BMU (\emph{Best Match Unit}). Na segunda fase, cooperativa, é definida a vizinhança deste neurônio. Na ultima fase, adaptativa, os vetores de peso do neurônio vencedor e de sua vizinhança são ajustados.\cite[p.34]{da2004mapas}
+
+Conforme \citeonline{sassi2006arquitetura} um mapa entre um espaço discreto de $M$ neurônios e um espaço N-dimensional contínuo de vetores $x$ de entrada, é implementada em uma rede do tipo o-vencedor-fica-com-tudo. Neste caso um neurônio vencedor pode representar mais de um vetor $x$. Portanto, este neurônio será o representante de um grupo de padrões $x$ que o fazem ser vencedor. Esse neurônio é adaptado (\emph{winner-takes-all}). O vetor de pesos associado a ele é atualizado de forma a representar ainda mais o dado apresentado, aumentando a probabilidde de que este mesmo neurônio volte a vencer em uma próxima apresentação de dado semelhante, ou do mesmo dado.
+
+Segundo \citeonline{zuchini2003aplicaccoes} e \citeonline{sassi2006arquitetura} a idéia fundamental na fase cooperativa e adaptiva, é que neurônios próximos no arranjo representem dados próximos no espaço de dados. A introdução da função de vizinhança faz com que o vetor de pesos não apenas do neurônio vencedor seja atualizado na direção da entrada atual, mas o vetor de pesos dos neurônios que fazem parte de sua vizinhança. \citeonline{sassi2006arquitetura} faz a seguinte analogia, todos o vetores de pesos dos neurônios da rede SOM estariam ligados por elásticos, onde os elásticos de maior intesidade estariam unindo os vetores mais proximos, e conforme a distância entre esses vetores aumenta a intensidade dos elásticos diminui. Quando o vetor peso de um determinado neurônio vencedor fosse alterado, ele arrastaria consigo os demais vetores que estão ligados a ele, e mais intensamente aqueles mais próximos.
 \chapter{Desenvolvimento}
 \chapter{Testes e Análise de Resultados}
 \chapter{Conclusão}

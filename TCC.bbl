@@ -80,6 +80,12 @@ Dispon{\'\i}vel em:
 \emph{Proceedings of the 6th evaluation campaign of Natural Language Processing
   and Speech tools for Italian (EVALITA’18), Turin, Italy. CEUR. org}, 2018.}
 
+\bibitem[Forgy 1965]{forgy1965cluster}
+\abntrefinfo{Forgy}{FORGY}{1965}
+{FORGY, E.~W. Cluster analysis of multivariate data: efficiency versus
+  interpretability of classifications.
+\emph{biometrics}, v.~21, p. 768--769, 1965.}
+
 \bibitem[Goker e Davies 2009]{goker2009information}
 \abntrefinfo{Goker e Davies}{GOKER; DAVIES}{2009}
 {GOKER, A.; DAVIES, J. \emph{Information retrieval: searching in the 21st
@@ -89,10 +95,26 @@ Dispon{\'\i}vel em:
 \abntrefinfo{Hodges}{HODGES}{1999}
 {HODGES, A. \emph{Turing um fil{\'o}sofo da natureza}. [S.l.]: Unesp, 1999.}
 
+\bibitem[Kohonen 2013]{kohonen2013essentials}
+\abntrefinfo{Kohonen}{KOHONEN}{2013}
+{KOHONEN, T. Essentials of the self-organizing map.
+\emph{Neural networks}, Elsevier, v.~37, p. 52--65, 2013.}
+
+\bibitem[Kohonen e Honkela 2007]{kohonen2007kohonen}
+\abntrefinfo{Kohonen e Honkela}{KOHONEN; HONKELA}{2007}
+{KOHONEN, T.; HONKELA, T. Kohonen network.
+\emph{Scholarpedia}, v.~2, n.~1, p.~1568, 2007.}
+
 \bibitem[Kov{\'a}cs 2002]{kovacs2002redes}
 \abntrefinfo{Kov{\'a}cs}{KOV{\'A}CS}{2002}
 {KOV{\'A}CS, Z.~L. \emph{Redes neurais artificiais}. [S.l.]: Editora Livraria
   da Fisica, 2002.}
+
+\bibitem[Lloyd 1982]{lloyd1982least}
+\abntrefinfo{Lloyd}{LLOYD}{1982}
+{LLOYD, S. Least squares quantization in pcm.
+\emph{IEEE transactions on information theory}, IEEE, v.~28, n.~2, p. 129--137,
+  1982.}
 
 \bibitem[Mata e Soares 2017]{da2017valores}
 \abntrefinfo{Mata e Soares}{MATA; SOARES}{2017}
@@ -136,6 +158,14 @@ Dispon{\'\i}vel em:
   dados.
 Universidade Presbiteriana Mackenzie, 2018.}
 
+\bibitem[Sassi 2006]{sassi2006arquitetura}
+\abntrefinfo{Sassi}{SASSI}{2006}
+{SASSI, R.~J.
+\emph{Uma arquitetura h{\'\i}brida para descoberta de conhecimento em bases de
+  dados: teoria dos rough sets e redes neurais artificiais mapas
+  auto-organiz{\'a}veis.}
+Tese (Doutorado) --- Universidade de S{\~a}o Paulo, 2006.}
+
 \bibitem[Silva e Silva 2014]{inproceedings}
 \abntrefinfo{Silva e Silva}{SILVA; SILVA}{2014}
 {SILVA, L.; SILVA, L. Fundamentos de mineração de dados educacionais. In:  .
@@ -147,9 +177,21 @@ Universidade Presbiteriana Mackenzie, 2018.}
   minera{\c{c}}{\~a}o de dados: com aplica{\c{c}}{\~o}es em R}. [S.l.]:
   Elsevier Brasil, 2017.}
 
+\bibitem[Silva 2004]{da2004mapas}
+\abntrefinfo{Silva}{SILVA}{2004}
+{SILVA, M. A.~S. da. Mapas auto-organiz{\'a}veis na an{\'a}lise
+  explorat{\'o}ria de dados geoespaciais multivariados.
+\emph{SILVA}, v.~681, p.~019, 2004.}
+
 \bibitem[Smolensky 1988]{smolensky1988connectionism}
 \abntrefinfo{Smolensky}{SMOLENSKY}{1988}
 {SMOLENSKY, P. \emph{Connectionism, constituency, and the language of thought}.
   [S.l.]: University of Colorado at Boulder, 1988.}
+
+\bibitem[Zuchini et al. 2003]{zuchini2003aplicaccoes}
+\abntrefinfo{Zuchini et al.}{ZUCHINI et al.}{2003}
+{ZUCHINI, M.~H. et al. Aplica{\c{c}}{\~o}es de mapas auto-organiz{\'a}veis em
+  minera{\c{c}}{\~a}o de dados e recupera{\c{c}}{\~a}o de informa{\c{c}}{\~a}o.
+[sn], 2003.}
 
 \end{thebibliography}
