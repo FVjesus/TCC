@@ -23,19 +23,29 @@
 \contentsline {section}{\numberline {2.3}Minera\IeC {\c c}\IeC {\~a}o de Textos}{22}{section.2.3}
 \contentsline {section}{\numberline {2.4}Intelig\IeC {\^e}ncia Artificial}{23}{section.2.4}
 \contentsline {section}{\numberline {2.5}Redes Neurais Artificiais}{25}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Motiva\IeC {\c c}\IeC {\~a}o para as RNAs: redes biol\IeC {\'o}gicas}{26}{subsection.2.5.1}
-\contentsline {section}{\numberline {2.6}Mapas Auto Organiz\IeC {\'a}veis de Kohonen}{27}{section.2.6}
-\contentsline {subsection}{\numberline {2.6.1}Defini\IeC {\c c}\IeC {\~a}o Matem\IeC {\'a}tica do SOM}{27}{subsection.2.6.1}
-\contentsline {subsection}{\numberline {2.6.2}Aprendizagem}{28}{subsection.2.6.2}
+\contentsline {subsection}{\numberline {2.5.1}Motiva\IeC {\c c}\IeC {\~a}o para as RNAs: redes biol\IeC {\'o}gicas}{25}{subsection.2.5.1}
+\contentsline {section}{\numberline {2.6}Perceptrons Multicamadas}{25}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Aprendizagem}{26}{subsection.2.6.1}
+\contentsline {section}{\numberline {2.7}Mapas Auto Organiz\IeC {\'a}veis de Kohonen}{28}{section.2.7}
+\contentsline {subsection}{\numberline {2.7.1}Defini\IeC {\c c}\IeC {\~a}o Matem\IeC {\'a}tica do SOM}{28}{subsection.2.7.1}
+\contentsline {subsection}{\numberline {2.7.2}Aprendizagem}{29}{subsection.2.7.2}
+\contentsline {section}{\numberline {2.8}K-means}{30}{section.2.8}
+\contentsline {section}{\numberline {2.9}Visualiza\IeC {\c c}\IeC {\~a}o de dados}{31}{section.2.9}
+\contentsline {subsection}{\numberline {2.9.1}Word cloud}{31}{subsection.2.9.1}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Desenvolvimento}}{29}{chapter.3}
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Desenvolvimento}}{33}{chapter.3}
+\contentsline {section}{\numberline {3.1}Obten\IeC {\c c}\IeC {\~a}o dos Dados}{33}{section.3.1}
+\contentsline {section}{\numberline {3.2}Pr\IeC {\'e} Processamento}{33}{section.3.2}
+\contentsline {section}{\numberline {3.3}An\IeC {\'a}lise}{33}{section.3.3}
+\contentsline {section}{\numberline {3.4}Treinamento SOM e K-Means}{33}{section.3.4}
+\contentsline {section}{\numberline {3.5}Treinamento MLP}{33}{section.3.5}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Testes e An\IeC {\'a}lise de Resultados}}{31}{chapter.4}
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Testes e An\IeC {\'a}lise de Resultados}}{35}{chapter.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Conclus\IeC {\~a}o}}{33}{chapter.5}
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Conclus\IeC {\~a}o}}{37}{chapter.5}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\MakeTextUppercase {Refer\^encias}}{35}{section*.10}
+\contentsline {chapter}{\MakeTextUppercase {Refer\^encias}}{39}{section*.10}
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{Appendices}{37}{section*.11}
+\contentsline {part}{Appendices}{43}{section*.11}

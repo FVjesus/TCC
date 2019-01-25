@@ -43,6 +43,12 @@
   artificiais: teoria e aplica{\c{c}}{\~o}es}. [S.l.]: Livros T{\'e}cnicos e
   Cient{\'\i}ficos Rio de Janeiro, 2000.}
 
+\bibitem[Cambronero e Moreno 2006]{cambronero2006algoritmos}
+\abntrefinfo{Cambronero e Moreno}{CAMBRONERO; MORENO}{2006}
+{CAMBRONERO, C.~G.; MORENO, I.~G. Algoritmos de aprendizaje: knn \& kmeans.
+\emph{Intelgencia en Redes de Comunicaci{\'o}n, Universidad Carlos III de
+  Madrid}, 2006.}
+
 \bibitem[Camilo e Silva 2009]{camilo2009mineraccao}
 \abntrefinfo{Camilo e Silva}{CAMILO; SILVA}{2009}
 {CAMILO, C.~O.; SILVA, J. C.~d. Minera{\c{c}}{\~a}o de dados: Conceitos,
@@ -60,6 +66,13 @@ In:  \underline{\ \ \ \ \ \ \ \ }. [S.l.: s.n.], 2015. p. 79--98.}
 {DEODATO, L. \emph{O que é misoginia?} 2017.
 Dispon{\'\i}vel em:
   \url{https://www.ovalordofeminino.com.br/artigo/o-que-\%C3\%A9-misoginia}.}
+
+\bibitem[Duarte et al. 2009]{duarte2009mp}
+\abntrefinfo{Duarte et al.}{DUARTE et al.}{2009}
+{DUARTE, V. A.~R. et al. Mp-draughts-um sistema multiagente de aprendizagem
+  autom{\'a}tica para damas baseado em redes neurais de kohonen e perceptron
+  multicamadas.
+Universidade Federal de Uberl{\^a}ndia, 2009.}
 
 \bibitem[Fayyad, Piatetsky-Shapiro e Smyth 1996]{fayyad1996kdd}
 \abntrefinfo{Fayyad, Piatetsky-Shapiro e Smyth}{FAYYAD; PIATETSKY-SHAPIRO;
@@ -86,10 +99,28 @@ Dispon{\'\i}vel em:
   interpretability of classifications.
 \emph{biometrics}, v.~21, p. 768--769, 1965.}
 
+\bibitem[Freitas et al. 2008]{freitas2008extraccao}
+\abntrefinfo{Freitas et al.}{FREITAS et al.}{2008}
+{FREITAS, C. et al. Extra{\c{c}}{\~a}o de conhecimento e an{\'a}lise visual de
+  redes sociais.
+\emph{SEMISH-Semin{\'a}rio Integrado de Software e Hardware, Bel{\'e}m do
+  Par{\'a}, Brasil, SBC}, p. 106--120, 2008.}
+
 \bibitem[Goker e Davies 2009]{goker2009information}
 \abntrefinfo{Goker e Davies}{GOKER; DAVIES}{2009}
 {GOKER, A.; DAVIES, J. \emph{Information retrieval: searching in the 21st
   century}. [S.l.]: John Wiley \& Sons, 2009.}
+
+\bibitem[Harris 2011]{harris2011word}
+\abntrefinfo{Harris}{HARRIS}{2011}
+{HARRIS, J. Word clouds considered harmful.
+\emph{Nieman Journalism Lab}, 2011.}
+
+\bibitem[Heimerl et al. 2014]{heimerl2014word}
+\abntrefinfo{Heimerl et al.}{HEIMERL et al.}{2014}
+{HEIMERL, F. et al. Word cloud explorer: Text analytics based on word clouds.
+  In:  IEEE. \emph{System Sciences (HICSS), 2014 47th Hawaii International
+  Conference on}. [S.l.], 2014. p. 1833--1842.}
 
 \bibitem[Hodges 1999]{hodges1999turing}
 \abntrefinfo{Hodges}{HODGES}{1999}
@@ -116,6 +147,12 @@ Dispon{\'\i}vel em:
 \emph{IEEE transactions on information theory}, IEEE, v.~28, n.~2, p. 129--137,
   1982.}
 
+\bibitem[Lopes 2004]{lopes2004mineraccao}
+\abntrefinfo{Lopes}{LOPES}{2004}
+{LOPES, M. C.~S. Minera{\c{c}}{\~a}o de dados textuais utilizando t{\'e}cnicas
+  de clustering para o idioma portugu{\^e}s.
+\emph{Rio de Janeiro: sn}, 2004.}
+
 \bibitem[Mata e Soares 2017]{da2017valores}
 \abntrefinfo{Mata e Soares}{MATA; SOARES}{2017}
 {MATA, E. M.~S. da; SOARES, F. H.~M. Valores sociais e a constru{\c{c}}{\~a}o
@@ -131,6 +168,13 @@ Dispon{\'\i}vel em:
 \abntrefinfo{Morais e Ambr{\'o}sio}{MORAIS; AMBR{\'O}SIO}{2007}
 {MORAIS, E. A.~M.; AMBR{\'O}SIO, A. P.~L. Minera{\c{c}}{\~a}o de textos.
 \emph{Relat{\'o}rio T{\'e}cnico--Instituto de Inform{\'a}tica (UFG)}, 2007.}
+
+\bibitem[Nascimento e Ferreira 2005]{do2005visualizaccao}
+\abntrefinfo{Nascimento e Ferreira}{NASCIMENTO; FERREIRA}{2005}
+{NASCIMENTO, H.~A. D.; FERREIRA, C.~B. Visualiza{\c{c}}{\~a}o de
+  informa{\c{c}}{\~o}es--uma abordagem pr{\'a}tica. In:  \emph{XXV Congresso da
+  Sociedade Brasileira de Computa{\c{c}}{\~a}o, XXIV JAI. UNISINOS, S.
+  Leopoldo--RS}. [S.l.: s.n.], 2005.}
 
 \bibitem[Paz{\'o} e J{\'u}nior 2016]{pazo2016misoginia}
 \abntrefinfo{Paz{\'o} e J{\'u}nior}{PAZ{\'O}; J{\'U}NIOR}{2016}
@@ -187,6 +231,11 @@ Tese (Doutorado) --- Universidade de S{\~a}o Paulo, 2006.}
 \abntrefinfo{Smolensky}{SMOLENSKY}{1988}
 {SMOLENSKY, P. \emph{Connectionism, constituency, and the language of thought}.
   [S.l.]: University of Colorado at Boulder, 1988.}
+
+\bibitem[Ware 2001]{warecolin2001}
+\abntrefinfo{Ware}{WARE}{2001}
+{WARE, C. \emph{Information Visualization: Perception for design}. second. San
+  Francisco, CA, USA: Morgan Kaufmann Publishers Inc., 2001.}
 
 \bibitem[Zuchini et al. 2003]{zuchini2003aplicaccoes}
 \abntrefinfo{Zuchini et al.}{ZUCHINI et al.}{2003}

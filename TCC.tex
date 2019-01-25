@@ -57,6 +57,8 @@
 \usepackage{graphicx}			% Inclusão de gráficos
 \usepackage{microtype} 			% para melhorias de justificação
 \usepackage{enumerate}			% para numeração das listas 
+\usepackage{enumitem}			% para numeração das listas 
+\setlist[enumerate]{label*=\arabic*.}
 % ---
 
 
@@ -441,20 +443,6 @@ Pode parecer óbvio que, em certo nível, os seres humanos manipulam símbolos, 
 \section{Redes Neurais Artificiais}
 Segundo \citeonline{braga2000redes} RNAs são sistemas paralelos distribuidos compostos por unidades de processamento simples (nodos) que calculam determinadas funções matemáticas (normalmente não-lineares). Essa unidades são dispostas em uma ou mais camadas e interligadas por um grande número de conexões, geralmente unidirecionais. Estes modelos de conexões normalmente estão associados a pesos, os quais aramazenam o conhecimento representado no modelo e servem para ponderar a entrada recebida por cada neurônio da rede. O funcionamento destas redes é inspirado em uma estrutura física natural: o cérebro humano.
 
-Comforme \citeonline{braga2000redes} e \citeonline{kovacs2002redes}, por volta do fim da década de 1950, na Universidade de Cornell, Rosenblatt deu continuidade às idéias de McCulloch. Criando uma genuína rede de múltiplos neurônios do tipo \emph{discriminadores lineares} esta rede foi descrita como rede de \emph{perceptron}. Um perceptron é uma rede com a seguinte topologia, os neurônios são dispostoos em váiras \emph{camadas}. Os que recebem das entradas diretamente formam o que é chamada de \emph{camada de entrada}. A camada que recebe a saída da camada de entrada como entrada constituem a segunda camada e assim consecutivamente até a ultima camada que é chamada de \emph{camada de saída}. Camadas que ficam entre as de entrada e saída são comumente referidas como \emph{camadas ocultas}.
-
-Com referência à \autoref{fig_rede_multicamada}.Uma rede neural multicamada de \emph{K} camadas, terá como entrada um vetor \textbf{x} de dimensão $J_0$ de componentes $x_{j_0}, j_0 = 1,2, ... J_0$. Estas conectam-se às entradas dos $J_1$ neurônios numa primeira camada. As saídas $u_lj_1,j_1 = 1,2, ... J_1$ destes, formando as componentes de um novo vetor \textbf{u$_1$} de dimensão $J_1$, conectam-se às entradas dos $J_2$ neurônios da camada seguinte e assim sucessivamente até a última camada que consistirá de $J_K$ neurônios fornecendo como saída da rede um vetor \textbf{y = u$_K$} de dimensão $J_K$. Genéricamente, $u_{kj_k}$ denota a saída do $j_k$ -ésima entrada da rede, e para $k=K$ a $j_k$ -ésima saída da rede.\cite[p. 39--40]{kovacs2002redes}
-
-\begin{figure}[htb]
-	\caption{\label{fig_rede_multicamada}Rede Neural Multicamada}
-	\begin{center}
-	    \includegraphics[scale=0.7]{imagens/rede_neural_multicamada.pdf}
-	\end{center}
-	\legend{Fonte: \citeonline[p.40]{kovacs2002redes}}
-\end{figure}
-
-Ainda segundo \citeonline{kovacs2002redes} e \citeonline{braga2000redes} o problema que Rosenblatt propôs a resolver foi o de casos simples com implementação de funções booleanas \textbf{E} e \textbf{OU} de duas variáveis, que são problemas linearmente separáveis, isto é, problemas cuja solução pode ser obtida ao dividir o espaço de entrada em duas regiões através de uma reta. O perceptron, não consegue detectar conectividade, paridade e simetria, que são problemas não-linearmente separáveis. Estes são exemplos de \textit{hard learning problems} (problemas difíceis de aprender).
-
 A abordagem conexionista ficou adormecida durante os anos 70, porém alguns pesquisadores continuaram desenvolvendo trabalhos na área. Dentre eles podem ser citados Igor Aleksander (redes sem pesos) na Inglaterra, Kunihiko Fukushima (cognitron e neocognitron) no Japão, Steven Grossberg (sistemas auto-adaptativos) nos EUA, e Teuvo Kohonen (memórias associativas e auto-organizadas) na Finlândia.
 
 \subsection{Motivação para as RNAs: redes biológicas}
@@ -463,6 +451,57 @@ O cérebro humano é um imenso e complexo bosque de células e conexões interce
 A estrutura dos nodos, a topologia dessas conexões e o comportamento conjunto dos neurônios naturais constroem a base de estudo das RNAs. As RNAs tendem a reproduzir as funções das redes biológicas, buscando colocar em prática a sua dinâmica e seu comportamento básico. 
 
 Conforme \citeonline{braga2000redes}, como caracteristicas comuns, ambos os sistemas são baseados em unidades de computação paralela e distribuída que se comunicam por meio de conexões sinápticas, possuem detetores de características, redundância e modularização das conexões. Apesar de pouca similaridade entre os dois sistemas do ponto de vista biológico, estas características semelhantes permitem às RNAs reproduzirem com fidelidade várias funções inerentes dos seres humanos
+
+\section{Perceptrons Multicamadas}
+
+Os \emph{perceptrons} multicamadas ou MLPs se caracterizam pela presença de uma ou mais camadas itermediárias ou escondidas(camadas em que os neurônios são efetivamente unidades processadoras, mas não correspondem à camada de saída). Adicionando-se uma ou mais camadas itermediárias, aumenta-se o poder computacional de processamento não-linear e armazenagem da rede. Em uma única camada oculta, suficientemente grande, é possivel representar, com exatidão qualquer função continua das entradas. O conjunto de saídas dos neurônios de cada camada da rede é utilizada como entrada para a camada seguinte.\cite[p.40]{duarte2009mp}
+
+Comforme \citeonline{braga2000redes} e \citeonline{kovacs2002redes}, por volta do fim da década de 1950, na Universidade de Cornell, Rosenblatt deu continuidade às idéias de McCulloch. Criando uma genuína rede de múltiplos neurônios do tipo \emph{discriminadores lineares} esta foi o seu novo modelo, o \emph{perceptron}. Um perceptron é uma rede com a seguinte topologia, os neurônios são dispostos em três \emph{camadas}. A primeira recebe as entradas do exterior e possui conexões fixas (retina); a segunda recebe a saída da camada de entrada, através de conexões cuja eficiência de transmissão (peso) é ajustável constituem a segunda camada e, por sua vez, envia saídas para a ultima camada (resposta).
+
+Ainda segundo \citeonline{kovacs2002redes},  \citeonline{braga2000redes} e \citeonline{russell2013inteligencia} o problema que Rosenblatt propôs a resolver foi o de casos simples com implementação de funções booleanas \textbf{E} e \textbf{OU} de duas variáveis, que são problemas linearmente separáveis, isto é, problemas cuja solução pode ser obtida ao dividir o espaço de entrada em duas regiões através de uma reta. O perceptron, não consegue detectar conectividade, paridade e simetria, que são problemas não-linearmente separáveis. Estes são exemplos de \textit{hard learning problems} (problemas difíceis de aprender). Porém qualquer funcionalidade desejada pode ser obtida ligando um grande número de unidades em redes de profundidade arbitrária.
+
+Com referência à \autoref{fig_rede_multicamada}.Uma rede neural multicamada de \emph{K} camadas, terá como entrada um vetor \textbf{x} de dimensão $J_0$ de componentes $x_{j_0}, j_0 = 1,2, ... J_0$. Estas conectam-se às entradas dos $J_1$ neurônios numa primeira camada. As saídas $u_lj_1,j_1 = 1,2, ... J_1$ destes, formando as componentes de um novo vetor \textbf{u$_1$} de dimensão $J_1$, conectam-se às entradas dos $J_2$ neurônios da camada seguinte e assim sucessivamente até a última camada que consistirá de $J_K$ neurônios fornecendo como saída da rede um vetor \textbf{y = u$_K$} de dimensão $J_K$. Genéricamente, $u_{kj_k}$ denota a saída do $j_k$ -ésima entrada da rede, e para $k=K$ a $j_k$ -ésima saída da rede.\cite[p. 39--40]{kovacs2002redes}
+
+\begin{figure}[htb]
+	\caption{\label{fig_rede_multicamada}Rede Neural Multicamada}
+	\begin{center}
+	    \includegraphics[scale=0.5]{imagens/rede_neural_multicamada.pdf}
+	\end{center}
+	\legend{Fonte: \citeonline[p.40]{kovacs2002redes}}
+\end{figure}
+
+
+\subsection{Aprendizagem}
+Segundo \citeonline{braga2000redes} existem vários algoritimos para treinar redes MLP, porém o mais conhecido é o \emph{back-propagation}. A maioria dos métodos de aprendizado para RNAs do tipo MLP utiliza variações desse algoritmo. O algoritmo \emph{back-propagation} é um algoritmo supervisionado que utiliza pares de entrada e saida desejada para ajustar os pesos da rede por meio de um mecanismo de correção de erros.
+
+Comforme \citeonline{russell2013inteligencia} as redes neurais são capazes de tarefas muito complexas de aprendizagem, porém  é necessário certa qantidade de esforço para obter a estrutura correta de rede para que a convergência para algo próximo ao ótimo global no espaço de peso seja alcançada.
+
+O treinamento do algoritmo de \emph{back-propagation} ocorre em duas etapas que percorrem a rede em sentidos opostos, o \emph{forward} define a saida da rede para uma determinado padrão de entrada e o \emph{backward} utiliza a saída desejada e a saída fornecida pela rede para atualizar os pesos de suas conexões, o algoritmo segue os seguites passos conforme explanado por \citeonline{braga2000redes}:
+
+\begin{enumerate}
+	\item Inicializar pesos e parâmetros;
+	\item Repetir até o erro ser mínimo ou até a realização de um dado número de ciclos:
+	\begin{enumerate}
+		\item Para cada padrão de treinamento X;
+				\begin{enumerate}
+					\item Definir saída da rede através da fase \emph{forward};
+					\item Comparar saídas produzidas com as saídas desejadas;
+					\item atualizar pesos do nodos através da fase \emph{backward}.
+		\end{enumerate}
+	\end{enumerate}
+	
+\end{enumerate}
+
+Ainda segundo \citeonline{braga2000redes} este algoritmo propõe uma forma de definir o erro dos nodos das camadas intermediárias, possibilitando o ajuste de seus pesos, e no seu fluxo de processamento  os dados seguem da entrada para a saída no sentido \emph{forward}, e os erros, da saída para a entrada no sentido \emph{backward}, conforme descrito na \autoref{representação_etapas_de_aprendizagem_MLP} .
+
+\begin{figure}[htb]
+	\caption{\label{representação_etapas_de_aprendizagem_MLP}Fluxo de processamento do algoritmo \emph{back-propagation}}
+	\begin{center}
+	    \includegraphics[scale=0.5]{imagens/etapas_MLP.png}
+	\end{center}
+	\legend{Fonte: \citeonline[p.60]{braga2000redes}}
+\end{figure}
+
 \section{Mapas Auto Organizáveis de Kohonen}
 \citeonline{kohonen2013essentials} define SOM como uma técnica de análise de dados não supervisionado, realizada por meio do treinamento de um \emph{grid} de neurônios. A anélise de sinais chamada \emph{"Vector Quantization"}, introduzido por \citeonline{forgy1965cluster} para forma vetorial, e por \citeonline{lloyd1982least} para dados escalares, foi a base para a criação desta técnica. 
 
@@ -486,7 +525,31 @@ O algoritmo básico de trinamento do SOM consiste em três fases. Na primeira fa
 Conforme \citeonline{sassi2006arquitetura} um mapa entre um espaço discreto de $M$ neurônios e um espaço N-dimensional contínuo de vetores $x$ de entrada, é implementada em uma rede do tipo o-vencedor-fica-com-tudo. Neste caso um neurônio vencedor pode representar mais de um vetor $x$. Portanto, este neurônio será o representante de um grupo de padrões $x$ que o fazem ser vencedor. Esse neurônio é adaptado (\emph{winner-takes-all}). O vetor de pesos associado a ele é atualizado de forma a representar ainda mais o dado apresentado, aumentando a probabilidde de que este mesmo neurônio volte a vencer em uma próxima apresentação de dado semelhante, ou do mesmo dado.
 
 Segundo \citeonline{zuchini2003aplicaccoes} e \citeonline{sassi2006arquitetura} a idéia fundamental na fase cooperativa e adaptiva, é que neurônios próximos no arranjo representem dados próximos no espaço de dados. A introdução da função de vizinhança faz com que o vetor de pesos não apenas do neurônio vencedor seja atualizado na direção da entrada atual, mas o vetor de pesos dos neurônios que fazem parte de sua vizinhança. \citeonline{sassi2006arquitetura} faz a seguinte analogia, todos o vetores de pesos dos neurônios da rede SOM estariam ligados por elásticos, onde os elásticos de maior intesidade estariam unindo os vetores mais proximos, e conforme a distância entre esses vetores aumenta a intensidade dos elásticos diminui. Quando o vetor peso de um determinado neurônio vencedor fosse alterado, ele arrastaria consigo os demais vetores que estão ligados a ele, e mais intensamente aqueles mais próximos.
+\section{K-means}
+Conforme \citeonline{lopes2004mineraccao} \emph{clustering} tem sido empregado em um número de aplicações baseadas em texto tais como Recuperação de informação e Categorização de textos. O \emph{clustering} é o agrupamento de representaçãoes similares de documentos em  separações onde os documenos pertencentes a mesma partição possuem uma similaridade maior entre eles do que a qualquer outro documento em qualquer outra partição.
+
+O algoritmo K-means, criado por MacQueen em 1967 é o algoritmo de \emph{clustering} mais conhecido e utilizado já que é de aplicação muito simples e eficaz. Segue um procedimento simples de classificação de um conjunto de objetos em um determinado número K de \emph{clusters}, onde o K é determinado a priori.\cite{cambronero2006algoritmos}
+
+Ainda segundo \citeonline{cambronero2006algoritmos} o algoritmo recebe tal nome por causa do seu funcionamento, já que o mesmo cria \emph{clusters} a partir da média (ou média ponderada) de seus pontos, e assim estabelece o centróide. Este tipo de representação tem a vantagem de possuir um significado gráfico e estátistico imediato. Cada agrupamento é caracterizado pelo seu centróide, que por sua vez está no centro e na média de todos os elementos que compõem o \emph{cluster}.
+
+Dado um número fixo de k, o \emph{clustering} K-means cria um conjunto de k \emph{clusters} e distribui o conjunto de documentos dados entre esses \emph{clusters} usando a similaridade entre os vetores-documento e os centróides dos \emph{clusters}, Um centróide é o vetor médio de todos os vetores-documento no respectivo \emph{cluster}. Cada vez que se adiciona um documento em um \emph{cluster}, o centróide daquele \emph{cluster} é recalculado. Note que quase sempre, um centróide não corresponde a um documento. A similaridade entre um documento \emph{d} e um centróide \emph{c} é calculada como o somatório de todos os vetores-documento no \emph{cluster} dividido pelo número de vetores-documento.\cite[p.53]{lopes2004mineraccao}
+
+\section{Visualização de dados}
+De acordo com \citeonline{freitas2008extraccao} a aplicação do termo visualização hoje é associada à possibilidade de explorar as informaçãoes subjacentes à representação gráfica. Porém genericamente, visualização é entendida como a "representação grafica de dados ou conceitos" \apudonline{warecolin2001}{freitas2008extraccao}.
+
+Conforme descrito por \citeonline{do2005visualizaccao} o processo de visualização está associado a geração de imagens (mentais ou reais) que possam ser analisadas pelos seres humanos a partir de algo abstrato. O objetivo final é facilitar o entendimento de um assunto determinado, onde o mesmo exigiria maior esforço para ser compreendido. Uma vez que técnicas que facilitam o entendimento de informações a partir de representações visuais de dados são agregados a área de Visualização de Informações, o estudo neste campo apresenta grande utilidade. Na área da Computação, a visualização de informações possue um destaque especial nas áreas de mineração de dados e na engenharia de software, pois auxilia na análise e no entendimento de determinadas estruturas com um maior nivel de abstração.
+\subsection{Word cloud}
+Conforme \citeonline{sargiani2018identificaccao} nuvens de palavras (\emph{word cloud}) são visualizações gráficas onde as palavras, de acordo com sua relevância dentro do \emph{Corpus} de origem, assumem posição e tamanho defirentes. Cores diferentes também podem ser usadas para auxiliar na diferenciação das palavras, e a própria nuvem de palavras pode ser formatada de acordo com o objetivo de transmissão de conhecimento que se espera.
+
+Como exposto por \citeonline{heimerl2014word} uma popular área de aplicação para \emph{word cloud} é a sumarização de texto. Neste contexto as nuvens são utilizadas para que uma visão geral intuitiva e visualmente atraente seja fornecida. Tal sumarização é proveitosa para aprendizagem sobre o número e tipo de temas presentes no corpo do texto. Essa visão estatística é gerada pelo correlacionamento entre o tamanho da fonte das palavras representadas com a frequência das mesmas. 
+
+Esta técnica foi originada on-line na década de 1990 como nuvens de tags, que foram utilizadas para exibir a popularidade de palavras-chave em bookmarks, consoante \citeonline{harris2011word}.
 \chapter{Desenvolvimento}
+\section{Obtenção dos Dados}
+\section{Pré Processamento}
+\section{Análise}
+\section{Treinamento SOM e K-Means}
+\section{Treinamento MLP}
 \chapter{Testes e Análise de Resultados}
 \chapter{Conclusão}
 % ---
